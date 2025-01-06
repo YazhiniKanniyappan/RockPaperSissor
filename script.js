@@ -55,6 +55,9 @@ btns.forEach((btn) => {
            playerScore++;
            playerScoreView.innerHTML = playerScore;
           }
+        else if(playerchoice === comchoice){
+          
+        }
        else{
            computerScore++;
            computerScoreView.innerHTML = computerScore;
