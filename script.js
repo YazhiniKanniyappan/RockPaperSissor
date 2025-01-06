@@ -10,6 +10,9 @@ const resetbtn = document.getElementById("resetbtn");
 let playerScore =  0;
 let computerScore = 0;
 
+computerScoreView.innerHTML = 0;
+playerScoreView.innerHTML = 0;
+
 //ResetGame Function
 function resetGame(){
    computerScore = 0;
@@ -17,6 +20,10 @@ function resetGame(){
    btns.forEach((btn) => {
      btn.disabled = false;
    })
+   player.innerHTML = "";
+   com.innerHTML = "";
+   computerScoreView.innerHTML = 0;
+   playerScoreView.innerHTML = 0;
    resetbtn.disabled = true;
  }
 //Disable Button
@@ -35,8 +42,8 @@ btns.forEach((btn) => {
        player.innerHTML = e.target.id;
        
        //Computer Choice
-       choice =  Math.floor(Math.random()*3);
-       comchoice = choices[choice];  
+       let choice =  Math.floor(Math.random()*3);
+       const comchoice = choices[choice];  
        com.innerHTML = comchoice;
          
        //condition
