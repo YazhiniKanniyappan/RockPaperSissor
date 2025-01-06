@@ -22,6 +22,7 @@ function resetGame(){
    })
    player.innerHTML = "";
    com.innerHTML = "";
+   result.innerHTML = "";
    computerScoreView.innerHTML = 0;
    playerScoreView.innerHTML = 0;
    resetbtn.disabled = true;
